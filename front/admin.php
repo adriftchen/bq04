@@ -12,9 +12,15 @@
   </tr>
   <tr>
     <td class="tt">驗證碼</td>
-    <td class="pp"><input type="text" name="ans" id="ans"></td>
+    <td class="pp">
+    <?php
+      $a=rand(10,99);
+      $b=rand(10,99);
+      $_SESSION['ans']=$a+$b; //把答案先存在sesseion C:/tmp內
+      echo $a . "+" . $b . "=";
+    ?><input type="text" name="ans" id="ans"></td>
   </tr>
 </table>
 <div class="ct">
-  <button onclick="login()">確定</button>
+  <button onclick="login('admin')">確定</button>
 </div>
