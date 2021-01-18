@@ -2,18 +2,7 @@
 date_default_timezone_set("Asia/Taipei");
 session_start();
 
-$Poster=new DB('poster');
-$Movie=new DB('movie');
-$Orders=new DB('orders');
-
-$sess=[
-    1=>"14:00~16:00",
-    2=>"16:00~18:00",
-    3=>"18:00~20:00",
-    4=>"20:00~22:00",
-    5=>"22:00~24:00",
-  
-  ];
+$Bottom=new DB('bottom');
 
 class DB{
     protected $dsn="mysql:host=localhost;dbname=db12;charset=utf8";
