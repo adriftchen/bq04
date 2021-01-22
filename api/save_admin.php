@@ -1,5 +1,5 @@
 <?php include "../base.php";
-
+print_r($_POST);
 $_POST['pr']=serialize($_POST['pr']);
 
 $Admin->save($_POST);
