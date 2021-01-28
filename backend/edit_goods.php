@@ -4,11 +4,11 @@
 ?>
 <!-- 從backend/add_goods.php複製 -->
 <h2 class="ct">新增商品</h2>
-<form action="api/add_goods.php" method="post">
+<form action="api/edit_goods.php" method="post">
   <table class="all">
     <tr>
       <td class="tt">所屬大分類</td>
-      <td class="pp"><select name="big" id="big"></select></td>
+      <td class="pp"><select name="big" id="big" onchange="getMids()"></select></td>
     </tr>
     <tr>
       <td class="tt">所屬中分類</td>
