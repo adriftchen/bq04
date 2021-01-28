@@ -71,8 +71,8 @@ foreach ($goods as $g) {
 	<td>
 		<button onclick="lof('?do=edit_goods&id=<?=$g['id'];?>')">修改</button>
 		<button onclick="del('goods',<?=$g['id'];?>)">刪除</button>
-		<button onclick="sh(up,<?=$g['id'];?>)">上架</button>
-		<button onclick="sh(down,<?=$g['id'];?>)">下架</button>
+		<button onclick="sh('up',<?=$g['id'];?>)">上架</button>
+		<button onclick="sh('down',<?=$g['id'];?>)">下架</button>
 	</td>
 </tr>
 

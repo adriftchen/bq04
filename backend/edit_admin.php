@@ -4,7 +4,7 @@ $pr=unserialize($admin['pr']);
 ?>
 <!-- 從back/add_admin.php複製 -->
 <h2 class="ct">修改管理員權限</h2>
-<form action="api/save_admin.php" mehtod="post">
+<form action="api/save_admin.php" method="post">
   <table class="all">
     <tr>
       <td class="tt ct">帳號</td>

@@ -5,6 +5,8 @@ if(!empty($_FILES['img']['tmp_name'])){
   $_POST['img']=$_FILES['img']['name'];
 }
 
+print_r($_POST);
+
 $Goods->save($_POST);
 
 to("../backend.php?do=th");

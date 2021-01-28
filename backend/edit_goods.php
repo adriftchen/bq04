@@ -1,9 +1,9 @@
 <?php
-
+$goods=$Goods->find($_GET['id']);
 
 ?>
 <!-- 從backend/add_goods.php複製 -->
-<h2 class="ct">新增商品</h2>
+<h2 class="ct">修改商品</h2>
 <form action="api/edit_goods.php" method="post">
   <table class="all">
     <tr>
@@ -44,7 +44,7 @@
     </tr>
   </table>
   <div class="ct">
-    <input type="hidden" name="id" vlaue="<?=$goods['id'];?>">
+    <input type="hidden" name="id" value="<?=$goods['id'];?>">
     <input type="submit" value="修改">
     <input type="reset" value="重置">
     <!-- <input type="button" value="返回" onclick="history.go(-1)"> -->

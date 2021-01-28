@@ -7,6 +7,9 @@ if(!empty($_FILES['img']['tmp_name'])){
 
 $_POST['num']=rand(100000,999999);
 $_POST['sh']=1;
+
+// print_r($_POST);
+
 $Goods->save($_POST);
 
 to("../backend.php?do=th");
