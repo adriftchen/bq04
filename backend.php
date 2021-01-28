@@ -9,6 +9,7 @@ if(empty($_SESSION['admin'])){
        $pr=unserialize($admin['pr']);
 
 }
+//這段註解掉，會出現未定義pr
 ;?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!-- saved from url=(0057)?do=admin -->
