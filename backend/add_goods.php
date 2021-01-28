@@ -4,7 +4,8 @@
   <table class="all">
     <tr>
       <td class="tt">所屬大分類</td>
-      <td class="pp"><select name="big" id="big"></select></td>
+      <!-- 大分類在畫面一載入時就拿到了，onchange取中分類 -->
+      <td class="pp"><select name="big" id="big" onchange="getMids()"></select></td>
     </tr>
     <tr>
       <td class="tt">所屬中分類</td>
@@ -36,7 +37,7 @@
     </tr>
     <tr>
       <td class="tt">商品介紹</td>
-      <td class="pp"><textarea name="intro" style="width:90%;height:90%"></textarea></td>
+      <td class="pp"><textarea name="intro" style="width:90%;height:200px"></textarea></td>
     </tr>
   </table>
   <div class="ct">
@@ -46,3 +47,23 @@
     <input type="button" value="返回" onclick="lof('?do=th')">
   </div>
 </form>
+
+<script>
+
+getBigs();
+
+function getBigs(){
+    $.get("api/get_big.php",function(bigs){
+      $("#big").html(bigs)
+      getMids($("#big").val());
+    })
+}
+
+function getMids(){
+  $.get("api/get_mid.php",{bigId:$("#big").val()},function(mids){
+      $("#mid").html(mids)
+  })
+}
+
+
+</script>

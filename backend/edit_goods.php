@@ -36,7 +36,7 @@
     </tr>
     <tr>
       <td class="tt">商品介紹</td>
-      <td class="pp"><textarea name="intro" style="width:90%;height:90%"></textarea></td>
+      <td class="pp"><textarea name="intro" style="width:90%;height:200px"></textarea></td>
     </tr>
   </table>
   <div class="ct">
