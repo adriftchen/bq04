@@ -4,7 +4,7 @@ $_POST['cart']=serialize($_SESSION['cart']);
 $_POST['num']=date("Ymd").rand(100000,999999);
 
 $Ord->save($_POST);
-
+// print_r($_POST);
 //訂單成立後把購物車清空
 unset($_SESSION['cart']);
 
