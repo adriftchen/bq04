@@ -16,7 +16,7 @@
 
   ?>
   <tr class="pp">
-    <td><a href="?do=ord_detail$id=<?=$ord['id'];?>"><?=$ord['num'];?></a></td>
+    <td><a href="?do=ord_detail&id=<?=$ord['id'];?>"><?=$ord['num'];?></a></td>
     <td><?=$ord['sum'];?></td>
     <td><?=$ord['acc'];?></td>
     <td><?=$ord['name'];?></td>
