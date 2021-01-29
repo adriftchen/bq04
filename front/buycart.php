@@ -76,7 +76,7 @@ if(empty($_SESSION['cart'])){
 function delItem(id){
   $.post("api/del_item.php",{id},function(){
     // location.reload();
-    //用reload最後一筆商品會刪不掉
+    //用reload最後一筆商品會刪不掉，改href
     location.href="?do=buycart";
   })
 }

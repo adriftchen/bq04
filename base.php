@@ -7,6 +7,7 @@ $Mem=new DB('mem');
 $Admin=new DB('admin');
 $Type=new DB('type');
 $Goods=new DB('goods');
+$Ord=new DB('ord');
 
 class DB{
     protected $dsn="mysql:host=localhost;dbname=db12;charset=utf8";
