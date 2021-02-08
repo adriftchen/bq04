@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- 主機： 127.0.0.1
--- 產生時間： 2021-01-29 07:53:26
+-- 產生時間： 2021-02-08 09:17:20
 -- 伺服器版本： 10.4.14-MariaDB
 -- PHP 版本： 7.4.10
 
@@ -144,9 +144,7 @@ CREATE TABLE `ord` (
 --
 
 INSERT INTO `ord` (`id`, `acc`, `name`, `sum`, `num`, `orddate`, `email`, `addr`, `tel`, `cart`) VALUES
-(1, 'BBB', 'may', 3300, '20210129920137', '2021-01-29', '0', 'uuuikkk', '012588', 'a:2:{i:12;s:1:\"1\";i:9;s:1:\"1\";}'),
-(2, 'BBB', 'may', 1200, '20210129164408', '2021-01-29', '0', 'uuuikkk', '012588', 'a:1:{i:5;s:1:\"1\";}'),
-(3, 'BBB', 'may', 1000, '20210129972238', '2021-01-29', 'njnjnj', 'uuuikkk', '012588', 'a:1:{i:8;s:1:\"1\";}');
+(1, 'AAA', 'TOM', 650, '20210129814997', '2021-01-29', 'ioioio', 'wwwqqq', '000123456', 'a:1:{i:12;s:1:\"1\";}');
 
 -- --------------------------------------------------------
 
@@ -250,7 +248,7 @@ ALTER TABLE `mem`
 -- 使用資料表自動遞增(AUTO_INCREMENT) `ord`
 --
 ALTER TABLE `ord`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- 使用資料表自動遞增(AUTO_INCREMENT) `type`
